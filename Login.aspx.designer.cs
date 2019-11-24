@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_5_Web_App
-{
-
-
-    public partial class Login
-    {
-
+namespace Project_5_Web_App {
+    
+    
+    public partial class Login {
+        
         /// <summary>
         /// Username control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Project_5_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Username;
-
+        
         /// <summary>
         /// usernameText control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Project_5_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox usernameText;
-
+        
         /// <summary>
         /// Password control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Project_5_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Password;
-
+        
         /// <summary>
         /// passwordText control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Project_5_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox passwordText;
-
+        
         /// <summary>
         /// LoginButton control.
         /// </summary>

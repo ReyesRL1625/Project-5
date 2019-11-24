@@ -8,29 +8,28 @@
         </p>
     </div>
     <div class ="row">
-        <h2>Weather and Crime</h2>
+        <h2>Weather</h2>
         <div class="col-md-4">
             <h3>Local Weather</h3>
             <p>A 5-day weather forecast service based on zip code </p>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
+            <asp:Button ID="Button1" runat="server" OnClick="btn_weather" Text="Submit" />
         </div>
         <div class="col-md-4">
             <h3>Weather Comparator</h3>
             <p> A service that compares two zip codes’ weather and shows the results</p>
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>  
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>  
+            <asp:Button ID="Button2" runat="server" OnClick="btn_weather_compare" Text="Submit" />
         </div>
-        <div class="col-md-4">
-            <h3>Local Crime</h3>
-            <p>A service that returns crime data for a given zip code. Can be used to publish crime reports and statistics</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Crime Comparator</h3>
-            <p>A service that compares two zip codes’ crime history and shows the results.</p>
-        </div>
-        <p>
-            <asp:Button ID="WeatherAndCrime" runat="server" Text="Go" Width="200px" />
-        </p>
-        <p>
-            <asp:Button ID="Subscribe" runat="server" Text="Subscribe" Width="200px" />
-        </p>
+        <div>
+        <tr ID="row0" runat="server"></tr><br />
+        <tr ID="row1" runat="server"></tr><br />
+        <tr ID="row2" runat="server"></tr><br />
+        <tr ID="row3" runat="server"></tr><br />
+        <tr ID="row4" runat="server"></tr><br />
+        <tr id="row5" runat="server"></tr><br />
+        </div>  
     </div>
     <div class="row">
         <h2>Natural Hazards</h2>
