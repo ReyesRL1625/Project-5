@@ -13,5 +13,10 @@ namespace Project_5_Web_App.Protected
         {
 
         }
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Default.aspx");
+        }
     }
 }

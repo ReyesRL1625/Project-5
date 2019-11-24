@@ -89,6 +89,15 @@
         <p>
             <asp:Button ID="SubscribeNearestStore" runat="server" Text="Subscribe" Width="200px" />
         </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            
+            <asp:Button ID="BackButton" runat="server" OnClick="BackButton_Click" Text="Back Home" />
+            
+        </p>
     </div>
 
 </asp:Content>
