@@ -11,7 +11,7 @@ namespace Project_5_Web_App
 {
 
 
-    public partial class Login
+    public partial class StaffLogin
     {
 
         /// <summary>
