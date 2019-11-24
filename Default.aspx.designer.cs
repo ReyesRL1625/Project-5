@@ -13,6 +13,15 @@ namespace Project_5_Web_App {
     public partial class Default {
         
         /// <summary>
+        /// RegisterButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RegisterButton;
+        
+        /// <summary>
         /// MemberButton control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace Project_5_Web_App {
         protected global::System.Web.UI.WebControls.Button MemberButton;
         
         /// <summary>
+        /// MemLoginButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button MemLoginButton;
+        
+        /// <summary>
         /// StaffButton control.
         /// </summary>
         /// <remarks>
@@ -29,5 +47,14 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button StaffButton;
+        
+        /// <summary>
+        /// StaffLoginButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button StaffLoginButton;
     }
 }

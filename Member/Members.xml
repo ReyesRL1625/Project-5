@@ -1,6 +1,6 @@
-﻿  <Members>
-    <Member>
-      <Username>username</Username>
-      <Password>password</Password>
-    </Member>
-  </Members>
+<Members>
+  <Member>
+    <Username>username</Username>
+    <Password>password</Password>
+  </Member>
+</Members>

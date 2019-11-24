@@ -1,8 +1,10 @@
-﻿<StaffMember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<StaffMember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Member>
-    <Member>
-      <username>b</username>
-      <password>b</password>
-    </Member>
+    <Username>a</Username>
+    <Password>a</Password>
+  </Member>
+  <Member>
+    <Username>TA</Username>
+    <Password>Cse445ta!</Password>
   </Member>
 </StaffMember>

@@ -11,67 +11,54 @@ namespace Project_5_Web_App.Protected
 {
     public partial class Staff : System.Web.UI.Page
     {
-        StaffMembers StaffMembersList = new StaffMembers();
-        Members MemberList = new Members();
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected void btn_addMember(object sender, EventArgs e)
+        protected void BackButton_Click(object sender, EventArgs e)
         {
-            String text1 = TextBox1.Text;
-            String text2 = TextBox2.Text;
-
-            var member = new List<Member>
-            {
-                    new Member { username = text1, password = text2 }
-            };
-
-            ToXmlFile(member, "Members.xml");
+            Response.Redirect("../Default.aspx");
         }
-        protected void btn_rmMember(object sender, EventArgs e)
-        {
 
-            String text1 = TextBox1.Text;
-            String text2 = TextBox2.Text;
-        }
         protected void btn_addStaff(object sender, EventArgs e)
         {
             String text1 = TextBox3.Text;
             String text2 = TextBox4.Text;
+            addToXml(text1, text2, "Staff.xml");
         }
         protected void btn_rmStaff(object sender, EventArgs e)
         {
             String text1 = TextBox3.Text;
             String text2 = TextBox4.Text;
+            
         }
-
-        public class StaffMembers
+        public void addToXml(string username, string password, string filePath)
         {
-            public List<Member> Member { get; set; }
-        }
-        public class Members
-        {
-            public List<Member> Member { get; set; }
-        }
-        public class Member
-        {
-            public string username { get; set; }
-            public string password { get; set; }
-        }
-        
-        public void ToXmlFile(Object obj, string filePath)
-        {
-            var xs = new XmlSerializer(obj.GetType());
-            var ns = new XmlSerializerNamespaces();
-            var ws = new XmlWriterSettings { Indent = true, OmitXmlDeclaration = true };
-            ns.Add("", "");
-
-            using (XmlWriter writer = XmlWriter.Create(Server.MapPath(filePath), ws))
+            string filepath = Server.MapPath(filePath);
+            XmlDocument myDoc = new XmlDocument();
+            myDoc.Load(filepath);
+            XmlElement rootElement = myDoc.DocumentElement;
+            foreach(XmlNode node in rootElement.ChildNodes)
             {
-                xs.Serialize(writer, obj);
+                if(node["Username"] != null && node["Username"].InnerText == username)
+                {
+                    errorUser.Text = String.Format("Username already exists");
+                    errorUser.Visible = true;
+                    return;
+                }
             }
+
+            XmlElement newMember = myDoc.CreateElement("Member", rootElement.NamespaceURI);
+            rootElement.AppendChild(newMember);
+            XmlElement newUser = myDoc.CreateElement("Username", rootElement.NamespaceURI);
+            newMember.AppendChild(newUser);
+            newUser.InnerText = username;
+
+            XmlElement newPass = myDoc.CreateElement("Password", rootElement.NamespaceURI);
+            newMember.AppendChild(newPass);
+            newPass.InnerText = password;
+
+            myDoc.Save(filepath);
         }
     }
 }

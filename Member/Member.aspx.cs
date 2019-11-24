@@ -143,5 +143,10 @@ namespace Project_5_Web_App
                 return weather2;
             }
         }
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Default.aspx");
+        }
     }
 }
