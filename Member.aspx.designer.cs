@@ -15,13 +15,13 @@ namespace Project_5_Web_App
     {
 
         /// <summary>
-        /// GetWeather control.
+        /// WeatherAndCrime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GetWeather;
+        protected global::System.Web.UI.WebControls.Button WeatherAndCrime;
 
         /// <summary>
         /// Subscribe control.
@@ -31,60 +31,6 @@ namespace Project_5_Web_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Subscribe;
-
-        /// <summary>
-        /// CompareWeather control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CompareWeather;
-
-        /// <summary>
-        /// Subscribe2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Subscribe2;
-
-        /// <summary>
-        /// GetCrime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GetCrime;
-
-        /// <summary>
-        /// SubscribeCrime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeCrime;
-
-        /// <summary>
-        /// CrimeComparator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CrimeComparator;
-
-        /// <summary>
-        /// SubscribeCrimeCompare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeCrimeCompare;
 
         /// <summary>
         /// GetNaturalHazards control.

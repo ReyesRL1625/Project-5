@@ -8,66 +8,29 @@
         </p>
     </div>
     <div class ="row">
-        <h2>Weather</h2>
+        <h2>Weather and Crime</h2>
         <div class="col-md-4">
-            <h3>
-                Local Weather
-            </h3>
-            <p>
-                A 5-day weather forecast service based on zip code 
-            </p>
-            <p>
-                <asp:Button ID="GetWeather" runat="server" Text="Get Weather" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="Subscribe" runat="server" Text="Subscribe" Width="200px" />
-            </p>
+            <h3>Local Weather</h3>
+            <p>A 5-day weather forecast service based on zip code </p>
         </div>
         <div class="col-md-4">
-            <h3>
-                Weather Comparator
-            </h3>
-            <p>
-                A service that compares two zip codes’ weather and shows the results
-            </p>
-            <p>
-                <asp:Button ID="CompareWeather" runat="server" Text="Compare Weather" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="Subscribe2" runat="server" Text="Subscribe" Width="200px" />
-            </p>
-         </div>
-    </div>
-    <div class="row">
-        <h2>Crime</h2>
-        <div class="col-md-4">
-            <h3>
-                Local Crime
-            </h3>
-            <p>
-                A service that returns crime data for a given zip code. Can be used to publish crime reports and statistics
-            </p>
-            <p>
-                <asp:Button ID="GetCrime" runat="server" Text="Get Crime" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID ="SubscribeCrime" runat="server" Text="Subscribe" Width="200px" />
-            </p>
+            <h3>Weather Comparator</h3>
+            <p> A service that compares two zip codes’ weather and shows the results</p>
         </div>
         <div class="col-md-4">
-            <h3>
-                Crime Comparator
-            </h3>
-            <p>
-                A service that compares two zip codes’ crime history and shows the results.
-            </p>
-            <p>
-                <asp:Button ID="CrimeComparator" runat="server" Text="Compare Crime" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="SubscribeCrimeCompare" runat="server" Text="Subscribe" Width="200px" />
-            </p>
+            <h3>Local Crime</h3>
+            <p>A service that returns crime data for a given zip code. Can be used to publish crime reports and statistics</p>
         </div>
+        <div class="col-md-4">
+            <h3>Crime Comparator</h3>
+            <p>A service that compares two zip codes’ crime history and shows the results.</p>
+        </div>
+        <p>
+            <asp:Button ID="WeatherAndCrime" runat="server" Text="Go" Width="200px" />
+        </p>
+        <p>
+            <asp:Button ID="Subscribe" runat="server" Text="Subscribe" Width="200px" />
+        </p>
     </div>
     <div class="row">
         <h2>Natural Hazards</h2>
