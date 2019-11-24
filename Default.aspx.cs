@@ -29,6 +29,11 @@ namespace Project_5_Web_App
         {
             Response.Redirect("Account/StudentLogin.aspx");
         }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -126,8 +126,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
     <Content Include="Protected\Web.config" />
+    <Content Include="Member\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Member.aspx" />
+    <Content Include="Member\Member.aspx" />
     <Content Include="Protected\Staff.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -198,11 +199,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Member.aspx.cs">
+    <Compile Include="Member\Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Member.aspx.designer.cs">
+    <Compile Include="Member\Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
