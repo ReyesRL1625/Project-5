@@ -18,29 +18,41 @@ namespace Project_5_Web_App
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
+            //if the username and password are not empty
             if ((usernameText.Text != "") && (passwordText.Text != ""))
             { 
+                //gets the text
                 String username = usernameText.Text;
                 String password = passwordText.Text;
 
                 Class1 h = new Class1();
+                //encrypts the password
                 password = h.hashMyPassword(password);
 
+                //checks to see if the login is a staff
                 bool loginSuccess = getLoginStatus(username, password);
 
+                //if the login is successful
                 if (loginSuccess)
                 {
-                    //Cookies
+                    //Creates a new cookie
                     HttpCookie myCookies = new HttpCookie("myCookieId");
-                    myCookies["Username"] = usernameText.Text;
-                    myCookies["Password"] = passwordText.Text;
+                    //stores the username and password
+                    myCookies["Username"] = username;
+                    myCookies["Password"] = password;
+                    //sets expiration for 1 day
                     myCookies.Expires = DateTime.Now.AddDays(1);
+                    //adds the cookie into the collection of cookies
                     Response.Cookies.Add(myCookies);
 
+                    //redirects the page to member page
                     Response.Redirect("/Protected/Staff.aspx");
-                } else
+                }
+                else
                 {
+                    //prints that there is an invalid login
                     errorUser.Text = String.Format("Invalid login");
+                    //displays the error
                     errorUser.Visible = true;
                 }
             }
