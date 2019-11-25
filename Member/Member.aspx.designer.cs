@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_5_Web_App {
-    
-    
-    public partial class Member {
-        
+namespace Project_5_Web_App
+{
+
+
+    public partial class Member
+    {
+
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-        
+
         /// <summary>
         /// TextBox2 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
-        
+
         /// <summary>
         /// TextBox3 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
-        
+
         /// <summary>
         /// Button2 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
-        
+
         /// <summary>
         /// row0 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row0;
-        
+
         /// <summary>
         /// row1 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row1;
-        
+
         /// <summary>
         /// row2 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row2;
-        
+
         /// <summary>
         /// row3 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row3;
-        
+
         /// <summary>
         /// row4 control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row4;
-        
+
         /// <summary>
         /// row5 control.
         /// </summary>
@@ -110,104 +112,68 @@ namespace Project_5_Web_App {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableRow row5;
-        
+
         /// <summary>
-        /// GetNaturalHazards control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GetNaturalHazards;
-        
+        protected global::System.Web.UI.WebControls.Label Label1;
+
         /// <summary>
-        /// SubscribeNaturalHazards control.
+        /// TextBox4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeNaturalHazards;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+
         /// <summary>
-        /// NaturalHazardsComparator control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NaturalHazardsComparator;
-        
+        protected global::System.Web.UI.WebControls.Label Label2;
+
         /// <summary>
-        /// SubscribeNaturalHazardsCompare control.
+        /// TextBox5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeNaturalHazardsCompare;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+
         /// <summary>
-        /// GetAirQuality control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GetAirQuality;
-        
+        protected global::System.Web.UI.WebControls.Button Button3;
+
         /// <summary>
-        /// SubscribeAirQuality control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeAirQuality;
-        
+        protected global::System.Web.UI.WebControls.Label Label3;
+
         /// <summary>
-        /// RateAirQuality control.
+        /// TextBox6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RateAirQuality;
-        
-        /// <summary>
-        /// SubscribeRateAirQuality control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeRateAirQuality;
-        
-        /// <summary>
-        /// FindNearestStore control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button FindNearestStore;
-        
-        /// <summary>
-        /// SubscribeNearestStore control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeNearestStore;
-        
-        /// <summary>
-        /// BackButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BackButton;
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
     }
 }

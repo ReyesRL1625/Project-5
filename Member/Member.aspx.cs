@@ -148,5 +148,16 @@ namespace Project_5_Web_App
         {
             Response.Redirect("../Default.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            decimal latitude = Convert.ToDecimal(TextBox4.Text);
+            decimal longitude = Convert.ToDecimal(TextBox5.Text);
+            int hazardIndex = 0;
+
+            HazardService.Service1Client hazardService = new HazardService.Service1Client();
+            hazardIndex = hazardService.NaturalHazards(latitude, longitude);
+            TextBox6.Text = hazardIndex.ToString();
+        }
     }
 }

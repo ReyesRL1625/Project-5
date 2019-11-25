@@ -32,72 +32,25 @@
         </div>  
     </div>
     <div class="row">
-        <h2>Natural Hazards</h2>
-        <div class="col-md-4">
-            <h3>Local Natural Hazards</h3>
-            <p>A service that returns the natural hazards (Tsunamis, earthquakes, volcanoes) index of a given position (latitude, longitude).</p>
+            <h2>Natural Hazards</h2>
             <p>
-                <asp:Button ID="GetNaturalHazards" runat="server" Text="Get Natural Hazards" Width="200px" />
+                The Natural Hazards service takes in a latitude and longitude of a location and returns the natural hazard index (count) for that location.
             </p>
-            <p>
-                <asp:Button ID="SubscribeNaturalHazards" runat="server" Text="Subscribe" Width="200px" />
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h3>Natural Hazards Comparator</h3>
-            <p>A service that compares natural hazards (Tsunamis, earthquakes, volcanoes) index of between to given positions (latitude, longitude).</p>
-            <p>
-                <asp:Button ID="NaturalHazardsComparator" runat="server" Text="Compare Natural Hazards" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="SubscribeNaturalHazardsCompare" runat="server" Text="Subscribe" Width="200px" />
-            </p>
-        </div>
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="Latitude"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+&nbsp;
+            <asp:Label ID="Label2" runat="server" Text="Longitude"></asp:Label>
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" OnClick="Button1_Click" Text="Calculate" />
+        </p>
+        <p>
+            <asp:Label ID="Label3" runat="server" Text="Results"></asp:Label>
+&nbsp;
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+        </p>    
     </div>
 
-    <div class="row">
-        <h2>Air Quality</h2>
-        <div class="col-md-4">
-            <h3>Local Air Quality</h3>
-            <p>This service returns a string with the o3, so2, no2, aqi, co, pm10, and pm25 of the air in the provided zipcode.</p>
-            <p>
-                <asp:Button ID="GetAirQuality" runat="server" Text="Get Air Quality" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="SubscribeAirQuality" runat="server" Text="Subscribe" Width="200px" />
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h3>Air Quality Rating Service</h3>
-            <p>This service returns a string to rate the air quality given an air quality index (aqi) between 0 and 500.</p>
-            <p>
-                <asp:Button ID="RateAirQuality" runat="server" Text="Rate Air Quality" Width="200px" />
-            </p>
-            <p>
-                <asp:Button ID="SubscribeRateAirQuality" runat="server" Text="Subscribe" Width="200px" />
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <h2>Find Nearest</h2>
-        <h3>Find Nearest Store</h3>
-        <p>A service that returns the address of the nearest store with the given name</p>
-        <p>
-            <asp:Button ID="FindNearestStore" runat="server" Text="Find Nearest Store" Width="200px" />
-        </p>
-        <p>
-            <asp:Button ID="SubscribeNearestStore" runat="server" Text="Subscribe" Width="200px" />
-        </p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            
-            <asp:Button ID="BackButton" runat="server" OnClick="BackButton_Click" Text="Back Home" />
-            
-        </p>
-    </div>
 
 </asp:Content>
