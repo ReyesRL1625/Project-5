@@ -1,10 +1,10 @@
 <StaffMember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Member>
-    <Username>a</Username>
-    <Password>a</Password>
+    <Username>TA</Username>
+    <Password>2C-92-D9-AA-A9-62-C4-7E-52-EE-7A-90-5C-18-87-8D-0C-32-59-86-78-60-49-B1-A5-3D-00-5E-2F-19-16-8F</Password>
   </Member>
   <Member>
-    <Username>TA</Username>
-    <Password>Cse445ta!</Password>
+    <Username>asdf</Username>
+    <Password>33-8C-77-30-47-A2-C1-4B-4F-CA-7B-7A-69-B2-EA-08-C0-64-E8-2F-CF-32-39-EB-0F-07-37-EE-58-BD-12-D0</Password>
   </Member>
 </StaffMember>

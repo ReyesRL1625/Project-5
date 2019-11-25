@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using HashingPasswords;
 
 namespace Project_5_Web_App
 {
@@ -21,6 +22,9 @@ namespace Project_5_Web_App
             { 
                 String username = usernameText.Text;
                 String password = passwordText.Text;
+
+                Class1 h = new Class1();
+                password = h.hashMyPassword(password);
 
                 bool loginSuccess = getLoginStatus(username, password);
 

@@ -5,31 +5,33 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
-using System.Xml.Serialization;
 using HashingPasswords;
 
-namespace Project_5_Web_App.Protected
+namespace Project_5_Web_App
 {
-    public partial class Staff : System.Web.UI.Page
+    public partial class Registration : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void BackButton_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("../Default.aspx");
-        }
 
-        protected void btn_addStaff(object sender, EventArgs e)
+        protected void btn_addUser(object sender, EventArgs e)
         {
-            String text1 = TextBox3.Text;
-            String text2 = TextBox4.Text;
+            string username = TextBox1.Text;
+            string password = TextBox2.Text;
+            string passwordConf = TextBox3.Text;
+
+            if(password != passwordConf)
+            {
+                errorUser.Text = String.Format("Passwords must match");
+                return;
+            }
 
             Class1 h = new Class1();
-            text2 = h.hashMyPassword(text2);
+            password = h.hashMyPassword(password);
 
-            addToXml(text1, text2, "Staff.xml");
+            addToXml(username, password, "/Member/Members.xml");
         }
 
         public void addToXml(string username, string password, string filePath)
@@ -38,9 +40,9 @@ namespace Project_5_Web_App.Protected
             XmlDocument myDoc = new XmlDocument();
             myDoc.Load(filepath);
             XmlElement rootElement = myDoc.DocumentElement;
-            foreach(XmlNode node in rootElement.ChildNodes)
+            foreach (XmlNode node in rootElement.ChildNodes)
             {
-                if(node["Username"] != null && node["Username"].InnerText == username)
+                if (node["Username"] != null && node["Username"].InnerText == username)
                 {
                     errorUser.Text = String.Format("Username already exists");
                     errorUser.Visible = true;
@@ -61,6 +63,12 @@ namespace Project_5_Web_App.Protected
             myDoc.Save(filepath);
 
             errorUser.Text = String.Format("User created");
+        }
+
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }

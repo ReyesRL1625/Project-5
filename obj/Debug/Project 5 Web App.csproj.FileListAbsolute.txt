@@ -281,3 +281,5 @@ C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\obj\Debug
 C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\obj\Debug\Project 5 Web App.csproj.CopyComplete
 C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\obj\Debug\Project 5 Web App.dll
 C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\obj\Debug\Project 5 Web App.pdb
+C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\bin\HashingPasswords.dll
+C:\Users\zadig\Documents\Semester7\CSE 445\Projects\Project5\Project-5\bin\HashingPasswords.pdb
