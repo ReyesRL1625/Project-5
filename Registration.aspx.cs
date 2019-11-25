@@ -13,7 +13,7 @@ namespace Project_5_Web_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Image1.ImageUrl = "~/imageProcess.aspx";
         }
 
         protected void btn_addUser(object sender, EventArgs e)
@@ -25,6 +25,11 @@ namespace Project_5_Web_App
             if(password != passwordConf)
             {
                 errorUser.Text = String.Format("Passwords must match");
+                return;
+            }
+            if (!Session["generatedString"].Equals(TextBox4.Text))
+            {
+                errorUser.Text = String.Format("Wrong captcha string, try again!");
                 return;
             }
 
@@ -69,6 +74,16 @@ namespace Project_5_Web_App
         protected void BackButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");
+        }
+
+        protected void NewImageButton_Click(object sender, EventArgs e)
+        {
+            MyImageService.ServiceClient fromService = new MyImageService.ServiceClient(); // create proxy to the remote service 
+            string length = "4";
+            Session["userLength"] = length;
+            string myStr = fromService.GetVerifierString(length);
+            Session["generatedString"] = myStr;
+            Image1.Visible = true;
         }
     }
 }
