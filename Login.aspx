@@ -7,18 +7,21 @@
             <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
         &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="usernameText" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                                    CssClass="field-validation-error" ErrorMessage="The password field is required." />
+           
         </p>
         <p>
             <asp:Label ID="Password" runat="server" Text="Password"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="passwordText" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                                    CssClass="field-validation-error" ErrorMessage="The password field is required." />
+           
         </p>
         <p>
             <asp:Button ID="LoginButton" runat="server" Text="Login" Width="200px" OnClick="LoginButton_Click" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Label ID="HashLabel" runat="server" Text="Hashed Password:"></asp:Label>
         </p>
     </div>
 </asp:Content>

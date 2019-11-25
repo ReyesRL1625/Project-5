@@ -293,6 +293,12 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Class\HashingPasswords\HashingPasswords.csproj">
+      <Project>{6aa62059-8632-4d2a-ac4f-2e4c7bf8bd20}</Project>
+      <Name>HashingPasswords</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
