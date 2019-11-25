@@ -1,12 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Project_5_Web_App.Protected.Staff" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Project_5_Web_App.Protected.Staff" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+    <h1>Staff Page</h1> <br />    
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server"> <title>staff page</title> </head>
-<body>
-    <form id="form2" runat="server">
         <h1>Staff Page of Travel Destination Reviewer</h1>
         <div>  
             <% Response.Write("Hello " + Context.User.Identity.Name + ", "); %> <br />
@@ -14,6 +10,16 @@
         and manage the camp. Only authenticated users can access this page .<br /> 
         </div>    
         <asp:Button ID="BackButton" runat="server" OnClick="BackButton_Click" Text="Back Home" />
-    </form>
-</body>
-</html>
+    
+    <li>
+        <p >Enter a username or password to add or remove a staff member</p>
+        <div>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>  
+            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>  
+            <asp:Button ID="Button3" runat="server" OnClick="btn_addStaff" Text="Add" />
+            <asp:Button ID="Button4" runat="server" OnClick="btn_rmStaff" Text="Remove" />
+            <asp:Label ID="errorUser" runat="server"></asp:Label>
+        </div>
+        </li>
+    
+</asp:Content>

@@ -139,7 +139,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Staff.xml" />
     <Content Include="Login.aspx" />
+    <Content Include="Member\Members.xml" />
     <Content Include="Protected\Web.config" />
     <Content Include="Member\Web.config" />
     <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
