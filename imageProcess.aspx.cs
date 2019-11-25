@@ -13,7 +13,8 @@ namespace Project_5_Web_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Clear(); MyImageService.ServiceClient fromService = new MyImageService.ServiceClient();
+            Response.Clear();
+            MyImageService.ServiceClient fromService = new MyImageService.ServiceClient();
             string myStr, userLen;
             if (Session["generatedString"] == null)
             {
