@@ -19,31 +19,45 @@ namespace Project_5_Web_App
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-
+            //if the username and password are not empty
             if ((usernameText.Text != "") && (passwordText.Text != ""))
             {
+                //get the text
                 string username = usernameText.Text;
                 string password = passwordText.Text;
 
+                //creates a new class
                 Class1 h = new Class1();
+                //encrypts the password
                 password = h.hashMyPassword(password);
 
+                //checks if they are a member
                 bool loginSuccess = getLoginStatus(username, password);
 
                 if (loginSuccess)
                 {
-                    //Cookies
+                    //Creates a new cookie
                     HttpCookie myCookies = new HttpCookie("myCookieId");
-                    myCookies["Username"] = usernameText.Text;
-                    myCookies["Password"] = passwordText.Text;
+                    //stores the username and password
+                    myCookies["Username"] = username;
+                    myCookies["Password"] = password;
+                    //sets expiration for 1 day
                     myCookies.Expires = DateTime.Now.AddDays(1);
+                    //adds the cookie into the collection of cookies
                     Response.Cookies.Add(myCookies);
+                    if(Request.Cookies != null)
+                    {
+                        bool help = true;
+                    }
 
+                    //redirects the page to member page
                     Response.Redirect("/Member/Member.aspx");
                 }
                 else
                 {
+                    //prints that there is an invalid login
                     errorUser.Text = String.Format("Invalid login");
+                    //displays the error
                     errorUser.Visible = true;
                 }
             }
