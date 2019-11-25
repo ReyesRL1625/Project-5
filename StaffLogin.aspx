@@ -15,6 +15,7 @@
         </p>
         <p>
             <asp:Button ID="LoginButton" runat="server" Text="Login" Width="200px" OnClick="LoginButton_Click" />
+            <asp:Label ID="errorUser" runat="server"></asp:Label>
         </p>
     </div>
 </asp:Content>

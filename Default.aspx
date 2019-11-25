@@ -20,7 +20,7 @@
         &nbsp;</p>
     <p>
         <asp:Button ID="StaffButton" runat="server" OnClick="StaffButton_Click" Text="Staff Page" />
-        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" />
+        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" OnClick="StaffButton_Login_Click"/>
     </p>
     <p>
     </p>

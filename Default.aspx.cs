@@ -25,6 +25,11 @@ namespace Project_5_Web_App
         {
             Response.Redirect("Protected/Staff.aspx"); // staff page
         }
+
+        protected void StaffButton_Login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StaffLogin.aspx"); // staff page
+        }
     }
 
 }
