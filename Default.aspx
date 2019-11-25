@@ -5,9 +5,10 @@
    
     <div class="jumbotron">
         <h1>Welcome</h1>
-        <p class="lead">The following application provides you with a travel destination reviewer. You can review things such as the weather, crime, natural hazards, favorite store locations, and air quality. You can
-            sign up
+        <p class="lead">The following application provides you with a travel destination reviewer. You can review things such as the weather and natural hazards. You can
+            sign up by clicking the &quot;Member Registration&quot; button, using your name and a password to create an account. Once you create and account, go back to login as a member and use the services!
         </p>
+        <p class="lead">Testing Zip Codes: 85349, 85281</p>
     </div>
     <p>
         <asp:Button ID="RegisterButton" runat="server" Text="Member Registration" OnClick="RegisterButton_Click" />

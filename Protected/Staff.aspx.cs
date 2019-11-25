@@ -62,5 +62,10 @@ namespace Project_5_Web_App.Protected
 
             errorUser.Text = String.Format("User created");
         }
+
+        protected void btn_rmStaff(object sender, EventArgs e)
+        {
+
+        }
     }
 }

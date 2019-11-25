@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using HashingPasswords;
 using System.Xml;
+using System.Web.Security;
 
 namespace Project_5_Web_App
 {
@@ -49,6 +50,8 @@ namespace Project_5_Web_App
                     {
                         bool help = true;
                     }
+                    
+                    FormsAuthentication.RedirectFromLoginPage(username, true);
 
                     //redirects the page to member page
                     Response.Redirect("/Member/Member.aspx");

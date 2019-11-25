@@ -43,7 +43,7 @@ namespace Project_5_Web_App
             myCookies = Request.Cookies["myCookiesId"];
             if ((myCookies == null) || (myCookies["Username"] == "") || (myCookies["Password"] == ""))
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("StaffLogin.aspx");
             }
             else
             {

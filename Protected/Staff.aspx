@@ -5,9 +5,8 @@
 
         <h1>Staff Page of Travel Destination Reviewer</h1>
         <div>  
-            <% Response.Write("Hello " + Context.User.Identity.Name + ", "); %> <br />
-        This page contains the information about staff members who will teach 
-        and manage the camp. Only authenticated users can access this page .<br /> 
+            <% Response.Write("Hello TA, "); %> <br />
+        This page contains the information about staff members. Only authenticated users can access this page .<br /> 
         </div>    
         <asp:Button ID="BackButton" runat="server" OnClick="BackButton_Click" Text="Back Home" />
     
