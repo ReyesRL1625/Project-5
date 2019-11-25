@@ -10,17 +10,17 @@
         </p>
     </div>
     <p>
-        <asp:Button ID="RegisterButton" runat="server" Text="Member Registration" />
+        <asp:Button ID="RegisterButton" runat="server" Text="Member Registration" OnClick="RegisterButton_Click" />
     </p>
 <p>
         <asp:Button ID="MemberButton" runat="server" OnClick="MemberButton_Click" Text="Member Page" />
-    &nbsp;<asp:Button ID="MemLoginButton" runat="server" Text="Member Login" />
+    &nbsp;<asp:Button ID="MemLoginButton" runat="server" Text="Member Login" OnClick="MemLoginButton_Click" />
     </p>
     <p>
         &nbsp;</p>
     <p>
         <asp:Button ID="StaffButton" runat="server" OnClick="StaffButton_Click" Text="Staff Page" />
-        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" />
+        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" OnClick="StaffLoginButton_Click" />
     </p>
     <p>
     </p>
